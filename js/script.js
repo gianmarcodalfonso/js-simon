@@ -23,7 +23,7 @@ const answerForm = document.getElementById(`answers-form`)
 const instructions = document.getElementById(`instructions`)
 
 
-let countLeft = 30;
+let countLeft = 2;
 const timer = setInterval(() => {
   countdown.innerText = countLeft
   countLeft--
@@ -36,10 +36,17 @@ const timer = setInterval(() => {
   }
 }, 1000);
 
-const btn = document.querySelector(`btn`)
+const btn = document.querySelector(`.btn`)
 
 btn.addEventListener(`click`, function(e){
   e.preventDefault()
 
+  const inputs = document.querySelectorAll(".form-control");
+  const userNums = [];
+
+  for(let i = 0; i < inputs.length; i++){
+    userNums.push(inputs[i].value)
+  }
+  console.log(userNums)
   
 })
