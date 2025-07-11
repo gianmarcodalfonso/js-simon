@@ -23,7 +23,7 @@ const answerForm = document.getElementById(`answers-form`)
 const instructions = document.getElementById(`instructions`)
 
 
-let countLeft = 2;
+let countLeft = 30;
 const timer = setInterval(() => {
   countdown.innerText = countLeft
   countLeft--
@@ -49,7 +49,7 @@ btn.addEventListener(`click`, function(e){
   }
   console.log(userNums)
   
-  const message = getElementById(`message`)
+  
   let match = 0;
 
   for(let i = 0 ; i < targetNums.length; i++){
@@ -59,6 +59,6 @@ btn.addEventListener(`click`, function(e){
       }
     }
   }
-
-
+  const message = document.getElementById(`message`)
+  message.innerText = `Hai trovato ${match} corrispondenze`
 })
