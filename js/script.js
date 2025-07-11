@@ -24,4 +24,8 @@ let countLeft = 30;
 const timer = setInterval(() => {
   countdown.innerText = countLeft
   countLeft--
+  if (countLeft < 0){
+    clearInterval(timer)
+    countLeft = ``
+  }
 }, 1000);
