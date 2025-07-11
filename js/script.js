@@ -17,3 +17,11 @@ const numbersList = document.getElementById(`numbers-list`)
 for(let i = 0; i < 5; i++){
   numbersList.innerHTML += `<li>${targetNums[i]}</li>`
 }
+
+const countdown = document.getElementById(`countdown`)
+
+let countLeft = 30;
+const timer = setInterval(() => {
+  countdown.innerText = countLeft
+  countLeft--
+}, 1000);
