@@ -20,6 +20,7 @@ for(let i = 0; i < 5; i++){
 
 const countdown = document.getElementById(`countdown`)
 const answerForm = document.getElementById(`answers-form`)
+const instructions = document.getElementById(`instructions`)
 
 let countLeft = 30;
 const timer = setInterval(() => {
@@ -30,5 +31,6 @@ const timer = setInterval(() => {
     countdown.innerText = ``
     numbersList.classList.add(`d-none`)
     answerForm.classList.remove(`d-none`)
+    instructions.innerText = `Inserisci i numeri che ricordi`
   }
 }, 1000);
