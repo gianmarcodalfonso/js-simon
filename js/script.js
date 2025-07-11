@@ -49,4 +49,16 @@ btn.addEventListener(`click`, function(e){
   }
   console.log(userNums)
   
+  const message = getElementById(`message`)
+  let match = 0;
+
+  for(let i = 0 ; i < targetNums.length; i++){
+    for(let j = 0; j < userNums.length; j++){
+      if(targetNums[i] === userNums[j]){
+        match++;
+      }
+    }
+  }
+
+
 })
