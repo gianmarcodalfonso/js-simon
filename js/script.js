@@ -22,6 +22,7 @@ const countdown = document.getElementById(`countdown`)
 const answerForm = document.getElementById(`answers-form`)
 const instructions = document.getElementById(`instructions`)
 
+
 let countLeft = 30;
 const timer = setInterval(() => {
   countdown.innerText = countLeft
@@ -34,3 +35,11 @@ const timer = setInterval(() => {
     instructions.innerText = `Inserisci i numeri che ricordi`
   }
 }, 1000);
+
+const btn = document.querySelector(`btn`)
+
+btn.addEventListener(`click`, function(e){
+  e.preventDefault()
+
+  
+})
