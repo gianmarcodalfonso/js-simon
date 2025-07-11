@@ -3,3 +3,11 @@ const rndmNum = () => {
 }
 
 console.log(rndmNum())
+
+const targetNums = []
+
+for(let i = 0; i < 5; i++){
+  targetNums.push(rndmNum())
+}
+
+console.log(targetNums)
