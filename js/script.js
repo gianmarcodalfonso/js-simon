@@ -19,6 +19,7 @@ for(let i = 0; i < 5; i++){
 }
 
 const countdown = document.getElementById(`countdown`)
+const answerForm = document.getElementById(`answers-form`)
 
 let countLeft = 30;
 const timer = setInterval(() => {
@@ -26,6 +27,8 @@ const timer = setInterval(() => {
   countLeft--
   if (countLeft < 0){
     clearInterval(timer)
-    countLeft = ``
+    countdown.innerText = ``
+    numbersList.classList.add(`d-none`)
+    answerForm.classList.remove(`d-none`)
   }
 }, 1000);
