@@ -1,5 +1,5 @@
 const rndmNum = () => {
-  return Math.floor(Math.random() * 30 + 1 )
+  return Math.floor(Math.random() * 50 + 1 )
 }
 
 console.log(rndmNum())
@@ -11,3 +11,9 @@ for(let i = 0; i < 5; i++){
 }
 
 console.log(targetNums)
+
+const numbersList = document.getElementById(`numbers-list`)
+
+for(let i = 0; i < 5; i++){
+  numbersList.innerHTML += `<li>${targetNums[i]}</li>`
+}
