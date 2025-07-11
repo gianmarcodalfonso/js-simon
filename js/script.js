@@ -45,7 +45,7 @@ btn.addEventListener(`click`, function(e){
   const userNums = [];
 
   for(let i = 0; i < inputs.length; i++){
-    userNums.push(inputs[i].value)
+    userNums.push(parseInt(inputs[i].value))
   }
   console.log(userNums)
   
